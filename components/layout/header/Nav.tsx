@@ -1,15 +1,12 @@
 import Link from "next/link";
 import React from "react";
-import Nav from "./Nav";
-import Logo from "./Logo";
 
-export default function Header() {
+export default function Nav() {
   return (
     <div>
       <div>
-        <Logo />
+        <Link href={"/com"}>Communication (c'est un lien)</Link>
       </div>
-      <Nav />
     </div>
   );
 }
