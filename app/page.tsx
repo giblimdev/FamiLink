@@ -23,6 +23,378 @@ export default function GrandConnectPresentation() {
         </div>
       </header>
 
+      {/* Article Section */}
+      <section className="py-16 bg-gradient-to-br from-gray-50 via-white to-blue-50">
+        <div className="container mx-auto px-4">
+          {/* Header */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-gray-700 via-blue-600 to-purple-700 bg-clip-text text-transparent mb-6">
+              L'Écosystème Numérique Senior : Entre Innovation et Fragmentation
+            </h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              Découvrez pourquoi GrandConnect révolutionne un secteur en pleine
+              mutation technologique
+            </p>
+          </div>
+
+          {/* Introduction */}
+          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+              Un Secteur en Pleine Mutation Technologique
+            </h3>
+            <div className="prose max-w-none text-gray-600">
+              <p className="mb-4">
+                Le marché des applications dédiées aux seniors connaît
+                aujourd'hui une transformation majeure. Alors que l'intelligence
+                artificielle révolutionne notre quotidien et que les
+                technologies de santé connectée progressent à vitesse grand V,
+                force est de constater que l'écosystème numérique destiné aux
+                personnes âgées peine à suivre le rythme de l'innovation.
+              </p>
+              <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
+                <p className="font-semibold text-blue-800">
+                  Un paradoxe saisissant : d'un côté, nous assistons à
+                  l'émergence d'outils technologiques toujours plus sophistiqués
+                  ; de l'autre, les solutions pour nos aînés semblent figées
+                  dans des approches obsolètes.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Problématiques actuelles */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+            <div className="bg-white rounded-xl shadow-lg p-8">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="bg-red-100 p-3 rounded-xl">
+                  <svg
+                    className="w-6 h-6 text-red-600"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold text-gray-800">
+                  Des Solutions Isolées et Vieillissantes
+                </h3>
+              </div>
+              <p className="text-gray-600 mb-4">
+                La plupart des applications "seniors" datent d'une époque pré-IA
+                et n'intègrent pas les avancées technologiques récentes.
+              </p>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-red-400 rounded-full"></div>
+                  Interfaces non intuitives
+                </li>
+                <li className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-red-400 rounded-full"></div>
+                  Fonctionnalités cloisonnées
+                </li>
+                <li className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-red-400 rounded-full"></div>
+                  Absence d'intelligence prédictive
+                </li>
+                <li className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-red-400 rounded-full"></div>
+                  Expérience utilisateur fragmentée
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg p-8">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="bg-orange-100 p-3 rounded-xl">
+                  <svg
+                    className="w-6 h-6 text-orange-600"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold text-gray-800">
+                  L'Éparpillement des Fonctionnalités
+                </h3>
+              </div>
+              <p className="text-gray-600 mb-4">
+                Un senior doit aujourd'hui composer avec de multiples
+                applications sans cohérence :
+              </p>
+              <div className="space-y-3">
+                <div className="flex items-center gap-3 text-sm">
+                  <div className="w-3 h-3 bg-orange-400 rounded-full"></div>
+                  <span className="text-gray-600">
+                    Application téléassistance
+                  </span>
+                </div>
+                <div className="flex items-center gap-3 text-sm">
+                  <div className="w-3 h-3 bg-orange-400 rounded-full"></div>
+                  <span className="text-gray-600">Communication familiale</span>
+                </div>
+                <div className="flex items-center gap-3 text-sm">
+                  <div className="w-3 h-3 bg-orange-400 rounded-full"></div>
+                  <span className="text-gray-600">Pilulier connecté</span>
+                </div>
+                <div className="flex items-center gap-3 text-sm">
+                  <div className="w-3 h-3 bg-orange-400 rounded-full"></div>
+                  <span className="text-gray-600">Objets santé connectés</span>
+                </div>
+              </div>
+              <div className="mt-4 p-3 bg-orange-50 rounded-lg">
+                <p className="text-sm font-medium text-orange-700">
+                  Cette multiplication crée une barrière insurmontable pour une
+                  population déjà peu familière avec le numérique.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* L'opportunité IA */}
+          <div className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl p-8 text-white mb-12">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-semibold mb-4">
+                L'Opportunité de l'Intelligence Artificielle
+              </h3>
+              <p className="text-lg opacity-90">
+                Une révolution technologique sous-exploitée dans le secteur
+                senior
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="bg-white/10 rounded-xl p-6 text-center">
+                <div className="bg-white/20 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg
+                    className="w-6 h-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                  </svg>
+                </div>
+                <h4 className="font-semibold mb-2">Langage Naturel</h4>
+                <p className="text-sm opacity-90">
+                  Compréhension et adaptation au vocabulaire
+                </p>
+              </div>
+
+              <div className="bg-white/10 rounded-xl p-6 text-center">
+                <div className="bg-white/20 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg
+                    className="w-6 h-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M9 11H7v9a2 2 0 002 2h8a2 2 0 002-2V9h2V7H9v4zm3-6V3a1 1 0 00-1-1H9a1 1 0 00-1 1v2h4z" />
+                  </svg>
+                </div>
+                <h4 className="font-semibold mb-2">Apprentissage</h4>
+                <p className="text-sm opacity-90">
+                  Adaptation aux habitudes personnelles
+                </p>
+              </div>
+
+              <div className="bg-white/10 rounded-xl p-6 text-center">
+                <div className="bg-white/20 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg
+                    className="w-6 h-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                  </svg>
+                </div>
+                <h4 className="font-semibold mb-2">Prédiction</h4>
+                <p className="text-sm opacity-90">
+                  Anticipation des besoins futurs
+                </p>
+              </div>
+
+              <div className="bg-white/10 rounded-xl p-6 text-center">
+                <div className="bg-white/20 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg
+                    className="w-6 h-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+                  </svg>
+                </div>
+                <h4 className="font-semibold mb-2">Centralisation</h4>
+                <p className="text-sm opacity-90">
+                  Expérience unifiée et cohérente
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* GrandConnect Solution */}
+          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+            <div className="text-center mb-8">
+              <h3 className="text-3xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-700 bg-clip-text text-transparent mb-4">
+                GrandConnect : La Réponse à la Fragmentation
+              </h3>
+              <p className="text-xl text-gray-600">
+                Réconcilier l'innovation technologique avec les besoins réels
+                des seniors
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="bg-blue-100 p-3 rounded-xl">
+                    <svg
+                      className="w-6 h-6 text-blue-600"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2">
+                      IA Conversationnelle
+                    </h4>
+                    <ul className="text-sm text-gray-600 space-y-1">
+                      <li>• Interface vocale naturelle qui s'adapte</li>
+                      <li>• Assistant personnel qui apprend</li>
+                      <li>• Reconnaissance émotionnelle</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="bg-purple-100 p-3 rounded-xl">
+                    <svg
+                      className="w-6 h-6 text-purple-600"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M13 10V3L4 14h7v7l9-11h-7z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2">
+                      Centralisation Intelligente
+                    </h4>
+                    <ul className="text-sm text-gray-600 space-y-1">
+                      <li>• Une seule application pour tous les besoins</li>
+                      <li>• Intégration native des services</li>
+                      <li>• Synchronisation automatique</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="bg-green-100 p-3 rounded-xl">
+                    <svg
+                      className="w-6 h-6 text-green-600"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2">
+                      Analyse Prédictive
+                    </h4>
+                    <ul className="text-sm text-gray-600 space-y-1">
+                      <li>• Détection d'anomalies comportementales</li>
+                      <li>• Alertes préventives pour les familles</li>
+                      <li>• Optimisation continue</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="bg-orange-100 p-3 rounded-xl">
+                    <svg
+                      className="w-6 h-6 text-orange-600"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2">
+                      Simplicité Révolutionnaire
+                    </h4>
+                    <ul className="text-sm text-gray-600 space-y-1">
+                      <li>• Interface adaptative au niveau utilisateur</li>
+                      <li>• Apprentissage progressif</li>
+                      <li>• Support humain intégré</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* CTA */}
+          <div className="text-center bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white">
+            <h3 className="text-2xl font-bold mb-4">
+              L'Avenir du Numérique Senior Commence Aujourd'hui
+            </h3>
+            <p className="text-lg mb-6 opacity-90">
+              GrandConnect incarne la vision d'avenir : une technologie
+              puissante rendue invisible par sa simplicité, un accompagnement
+              intelligent qui respecte l'autonomie.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button className="bg-white text-blue-600 px-8 py-3 rounded-xl font-semibold hover:bg-gray-100 transition-colors duration-300">
+                Découvrir GrandConnect
+              </Button>
+              <Button className="border-2 border-white text-white px-8 py-3 rounded-xl font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300">
+                Nous contacter
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Context Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6">

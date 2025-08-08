@@ -17,12 +17,23 @@ export default function EcosystemePage() {
       icon: Heart,
     },
     {
+      title:
+        "https://www.alenvi.io/article/outils-numeriques-essentiels-aidants-familiaux",
+      url: "https://www.alenvi.io/article/outils-numeriques-essentiels-aidants-familiaux",
+      description:
+        "https://www.alenvi.io/article/outils-numeriques-essentiels-aidants-familiaux",
+      source:
+        "https://www.alenvi.io/article/outils-numeriques-essentiels-aidants-familiaux",
+      category: "Application",
+      icon: Heart,
+    },
+    {
       title: "Grappels de médicaments",
       url: "https://www.mytherapyapp.com/fr",
       description:
         "Rappels de prise de médicaments fiables et documentation cohérente de vos prises",
-      source: "Naître et grandir",
-      category: "Communication",
+      source: "Application",
+      category: "Application",
       icon: Heart,
     },
     {
@@ -30,7 +41,7 @@ export default function EcosystemePage() {
       url: "https://www.redpanicbutton.com/",
       description: "https://www.redpanicbutton.com/",
       source: "Naître et grandir",
-      category: "Communication",
+      category: "Application",
       icon: Heart,
     },
     {
@@ -40,7 +51,31 @@ export default function EcosystemePage() {
       description:
         "Article sur l'utilisation de la technologie pour renforcer les liens intergénérationnels",
       source: "Naître et grandir",
-      category: "Communication",
+      category: "Application",
+      icon: Heart,
+    },
+    {
+      title: "https://www.famirelay.com/",
+      url: "https://www.famirelay.com/",
+      description: "https://www.famirelay.com/",
+      source: "https://www.famirelay.com/",
+      category: "Application",
+      icon: Heart,
+    },
+    {
+      title: "https://www.monka.care/",
+      url: "https://www.monka.care/",
+      description: "https://www.monka.care/",
+      source: "https://www.monka.care/",
+      category: "Application",
+      icon: Heart,
+    },
+    {
+      title: "https://www.journalette.fr/",
+      url: "https://www.journalette.fr/",
+      description: "https://www.journalette.fr/",
+      source: "https://www.journalette.fr/",
+      category: "Application",
       icon: Heart,
     },
   ];
