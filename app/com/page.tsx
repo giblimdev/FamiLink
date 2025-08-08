@@ -1,5 +1,6 @@
-// app/com/
-// app/page.tsx
+// @/app/com/page.tsx
+import Back from "@/components/Back";
+import Ecosysteme from "@/components/Ecosysteme";
 import { Button } from "@/components/ui/button";
 import {
   Sparkles,
@@ -140,7 +141,13 @@ export default function HomePage() {
           <ArrowRight className="ml-2 h-5 w-5" />
         </Button>
       </section>
-
+      <section>
+        <Ecosysteme />
+      </section>
+      {/* Retour automatique vers la page précédente */}
+      <div className="mb-6">
+        <Back label="Retour" fallbackUrl="/" />
+      </div>
       {/* FOOTER */}
       <footer className="text-muted-foreground text-sm pt-12 text-center">
         © {new Date().getFullYear()} FamiliAI. Tous droits réservés.
