@@ -1,0 +1,121 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../lib/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+//////////////////////
+////     Auth     ////
+//////////////////////
+
+model User {
+  id            String    @id @unique @default(uuid())
+  name          String
+  email         String    @unique
+  emailVerified Boolean
+  image         String?
+  createdAt     DateTime
+  updatedAt     DateTime
+  sessions      Session[]
+  accounts      Account[]
+
+  @@map("user")
+}
+
+model Session {
+  id        String   @id @unique @default(uuid())
+  expiresAt DateTime
+  token     String   @unique
+  createdAt DateTime
+  updatedAt DateTime
+  ipAddress String?
+  userAgent String?
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("session")
+}
+
+model Account {
+  id                    String    @id @unique @default(uuid())
+  accountId             String
+  providerId            String
+  userId                String
+  user                  User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  accessToken           String?
+  refreshToken          String?
+  idToken               String?
+  accessTokenExpiresAt  DateTime?
+  refreshTokenExpiresAt DateTime?
+  scope                 String?
+  password              String?
+  createdAt             DateTime
+  updatedAt             DateTime
+
+  @@map("account")
+}
+
+model Verification {
+  id         String    @id @unique @default(uuid())
+  identifier String
+  value      String
+  expiresAt  DateTime
+  createdAt  DateTime?
+  updatedAt  DateTime?
+
+  @@map("verification")
+}
+
+//////////////////////////
+////     Ckuster     ////
+/////////////////////////
+
+// Modèle principal représentant une famille complète
+model Family {
+  id        String   @id @unique @default(uuid()) // Identifiant unique de la famille
+  name      String // Nom de famille (ex: "Famille Dupont")
+  members   Person[] // Tous les membres de cette famille
+  createdAt DateTime @default(now()) // Date de création de l'enregistrement
+  updatedAt DateTime @updatedAt // Date de dernière modification
+
+  @@map("family") // Nom de la table dans la base de données
+}
+
+// Modèle représentant une personne membre d'une famille
+model Person {
+  id        String     @id @unique @default(uuid()) // Identifiant unique de la personne
+  firstName String // Prénom de la personne
+  lastName  String // Nom de famille de la personne
+  role      FamilyRole // Rôle dans la famille (grand-parent, parent, enfant, etc.)
+  age       Int? // Âge de la personne (optionnel)
+  familyId  String // Clé étrangère vers la famille principale
+  family    Family     @relation(fields: [familyId], references: [id], onDelete: Cascade) // Relation vers la famille
+
+  // Relations familiales hiérarchiques
+  parentId String? // ID du parent direct (optionnel)
+  parent   Person?  @relation("ParentChild", fields: [parentId], references: [id]) // Relation vers le parent
+  children Person[] @relation("ParentChild") // Liste des enfants directs
+
+  createdAt DateTime @default(now()) // Date de création de l'enregistrement
+  updatedAt DateTime @updatedAt // Date de dernière modification
+
+  @@map("person") // Nom de la table dans la base de données
+}
+
+// Énumération définissant les rôles possibles dans une famille
+enum FamilyRole {
+  GRANDPARENT // Grand-parent
+  PARENT // Parent
+  CHILD // Enfant
+  GRANDCHILD // Petit-enfant
+}

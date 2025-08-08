@@ -1,19 +1,33 @@
-// src/components/Logo.jsx
+// src/components/Logo.tsx
 import React from "react";
 
 export default function Logo() {
   return (
-    <div className="flex flex-col items-center justify-center bg-gray-100">
-      <div className="bg-white p-8 rounded-2xl shadow-lg text-center max-w-md w-full">
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4 tracking-tight">
-          GrandConnect
+    <div className="flex items-center">
+      <div className="relative group cursor-pointer">
+        {/* Effet de glow en arrière-plan */}
+        <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 rounded-lg blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
+
+        {/* Logo principal */}
+        <h1
+          className="
+          relative
+          text-2xl md:text-3xl lg:text-4xl 
+          font-black
+          bg-clip-text text-transparent 
+          bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-700
+          tracking-wide
+          font-sans
+          group-hover:scale-105
+          transition-all duration-300
+          drop-shadow-sm
+        "
+        >
+          Grand
+          <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+            Connect
+          </span>
         </h1>
-        <p className="text-lg md:text-xl text-gray-500 mb-2 italic">
-          ou FamiLink
-        </p>
-        <p className="text-base md:text-lg text-gray-600 font-medium">
-          L’assistant qui rapproche les générations
-        </p>
       </div>
     </div>
   );
