@@ -23,7 +23,7 @@ export default function EcosystemePage() {
       description:
         "https://www.alenvi.io/article/outils-numeriques-essentiels-aidants-familiaux",
       source:
-        "https://www.alenvi.io/article/outils-numeriques-essentiels-aidants-familiaux",
+        "alenvi.io/article/outils-numeriques-essentiels-aidants-familiaux",
       category: "Application",
       icon: Heart,
     },
@@ -37,10 +37,18 @@ export default function EcosystemePage() {
       icon: Heart,
     },
     {
+      title: "https://gabby-appli.com/",
+      url: "https://gabby-appli.com/",
+      description: "https://gabby-appli.com/",
+      source: "gabby-appli.com/",
+      category: "Application",
+      icon: Heart,
+    },
+    {
       title: "https://www.redpanicbutton.com/",
       url: "https://www.redpanicbutton.com/",
       description: "https://www.redpanicbutton.com/",
-      source: "Naître et grandir",
+      source: "redpanicbutton",
       category: "Application",
       icon: Heart,
     },
@@ -50,7 +58,7 @@ export default function EcosystemePage() {
       url: "https://www.silvereco.fr/la-nouvelle-application-ami-qui-revolutionne-la-relation-entre-les-aidants-et-leurs-proches-aides/",
       description:
         "Article sur l'utilisation de la technologie pour renforcer les liens intergénérationnels",
-      source: "Naître et grandir",
+      source: "silvereco.fr",
       category: "Application",
       icon: Heart,
     },
