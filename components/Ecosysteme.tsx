@@ -85,7 +85,7 @@ export default function EcosystemePage() {
       <div className="container mx-auto px-4 py-8">
         {/* Navigation */}
         <div className="mb-8">
-          <Back label="← Retour" fallbackUrl="/" />
+          <Back label="Retour" fallbackUrl="/" />
         </div>
 
         {/* Hero Section */}
